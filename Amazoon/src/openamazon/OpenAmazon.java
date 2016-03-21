@@ -38,6 +38,7 @@ public class OpenAmazon {
 			System.out.println("search field is found");
 			search.sendKeys("SDN books");
 			System.out.println("SDN books printed in search field");
+			System.out.println("SDN books printed");//--------added
 			driver.findElement(By.xpath(".//*[@id='nav-search']/form/div[2]/div/input")).click();
 			File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			try {
